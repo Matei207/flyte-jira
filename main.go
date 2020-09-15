@@ -17,14 +17,15 @@ limitations under the License.
 package main
 
 import (
-	jira "github.com/ExpediaGroup/flyte-jira/client"
-	"github.com/ExpediaGroup/flyte-jira/command"
-	"github.com/HotelsDotCom/flyte-client/client"
-	"github.com/HotelsDotCom/flyte-client/flyte"
 	"log"
 	"net/url"
 	"os"
 	"time"
+
+	jira "github.com/ExpediaGroup/flyte-jira/client"
+	"github.com/ExpediaGroup/flyte-jira/command"
+	"github.com/HotelsDotCom/flyte-client/client"
+	"github.com/HotelsDotCom/flyte-client/flyte"
 )
 
 func main() {
@@ -42,6 +43,7 @@ func main() {
 			command.SearchIssuesCommand,
 			command.IssueAssignCommand,
 			command.DoTransition,
+			command.GetStatuses,
 		},
 	}
 
