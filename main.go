@@ -45,6 +45,9 @@ func main() {
 			command.DoTransition,
 			command.GetStatuses,
 			command.GetTransitions,
+			command.IssueCreateLinkCommand,
+			command.IssueGetLinkCommand,
+			command.IssueDeleteLinkCommand,
 		},
 	}
 
