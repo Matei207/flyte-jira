@@ -44,6 +44,7 @@ func main() {
 			command.IssueAssignCommand,
 			command.DoTransition,
 			command.GetStatuses,
+			command.GetTransitions,
 		},
 	}
 
